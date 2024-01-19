@@ -18,12 +18,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - run: git remote add upstream https://github.com/gethomepage/homepage.git
+      - run: git remote add upstream https://github.com/gethomepage/homepage.git && git fetch upstream --tags
       - name: Fetch Upstream Tags
         id: fetch-upstream-tags
         if:  ${{ !inputs.tags }}
         run: |
-          git fetch upstream --tags
           fmt='
             r=%(refname)
             echo ${r#refs/tags/}
