@@ -23,12 +23,11 @@ jobs:
         id: fetch-upstream-tags
         if:  ${{ !inputs.tags }}
         run: |
-          fmt='
-            r=%(refname)
-            echo ${r#refs/tags/}
-          '
+          fmt='r=%(refname)
+          echo ${r#refs/tags/}'
           echo 'NEW_TAGS<<EOF' >> $GITHUB_OUTPUT
-          $(eval `git for-each-ref --format=$fmt --no-merge main refs/tags`) >> $GITHUB_OUTPUT
+          EXPR=$(git for-each-ref --format="$fmt" --no-merge main refs/tags)
+          eval "$EXPR" >> $GITHUB_OUTPUT
           echo 'EOF' >> $GITHUB_OUTPUT
       - name: Set Identity
         run: |
