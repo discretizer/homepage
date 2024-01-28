@@ -13,6 +13,7 @@ permissions:
   contents: write
 jobs:
   synchronize-upstream:
+    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,5 +46,13 @@ jobs:
           for TAG in ${NEW_TAGS}; do git push -u origin release/${TAG}; done
         env:
           NEW_TAGS: ${{inputs.tags || steps.fetch-upstream-tags.outputs.NEW_TAGS}}
+      - name: Push Tags
+        if: ${{inputs.tags || steps.fetch-upstream-tags.outputs.NEW_TAGS}}
+        run: |
+          for TAG in ${NEW_TAGS}; do
+            git tag -a ${TAG} origin/release/${TAG}
+          done
+        env:
+          GH_TOKEN: ${{secrets.HOMEPAGE_TOKEN}}
     env:
       GH_TOKEN: ${{ github.token }}
