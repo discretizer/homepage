@@ -490,8 +490,8 @@ section. For example:
 ```yaml
 auth:
   groups:
-    My Service Group:
+    - My Service Group:
       allowGroups: ["Group1", "Group2"]
-    My Other Group:
+    - My Other Group:
       allowGroups: ["Group1"]
 ```
