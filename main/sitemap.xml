@@ -266,6 +266,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gethomepage.dev/main/widgets/services/esphome/</loc>
+         <lastmod>2024-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gethomepage.dev/main/widgets/services/evcc/</loc>
          <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
@@ -306,6 +311,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gethomepage.dev/main/widgets/services/gitea/</loc>
+         <lastmod>2024-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gethomepage.dev/main/widgets/services/glances/</loc>
          <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
@@ -337,6 +347,11 @@
     </url>
     <url>
          <loc>https://gethomepage.dev/main/widgets/services/homeassistant/</loc>
+         <lastmod>2024-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/main/widgets/services/homebox/</loc>
          <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -541,6 +556,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gethomepage.dev/main/widgets/services/plantit/</loc>
+         <lastmod>2024-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gethomepage.dev/main/widgets/services/plex-tautulli/</loc>
          <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
@@ -636,12 +656,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gethomepage.dev/main/widgets/services/stash/</loc>
+         <lastmod>2024-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gethomepage.dev/main/widgets/services/syncthing-relay-server/</loc>
          <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gethomepage.dev/main/widgets/services/tailscale/</loc>
+         <lastmod>2024-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/main/widgets/services/tandoor/</loc>
          <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

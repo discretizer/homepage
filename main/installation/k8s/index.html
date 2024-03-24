@@ -675,6 +675,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#multiple-replicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Replicas
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1033,6 +1042,16 @@
       
         
           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -1698,6 +1717,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../widgets/services/esphome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ESPHome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../widgets/services/evcc/" class="md-nav__link">
         
   
@@ -1866,6 +1906,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../widgets/services/gitea/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gitea
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../widgets/services/glances/" class="md-nav__link">
         
   
@@ -1997,6 +2058,27 @@
   
   <span class="md-ellipsis">
     Home Assistant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../widgets/services/homebox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homebox
   </span>
   
 
@@ -2832,6 +2914,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../widgets/services/plantit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plant-it
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../widgets/services/plex-tautulli/" class="md-nav__link">
         
   
@@ -3231,6 +3334,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../widgets/services/stash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../widgets/services/syncthing-relay-server/" class="md-nav__link">
         
   
@@ -3508,7 +3632,7 @@
         
   
   <span class="md-ellipsis">
-    Whats Up Docker
+    What's Up Docker
   </span>
   
 
@@ -4152,6 +4276,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#multiple-replicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Replicas
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4509,6 +4642,32 @@
 </span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="w">                </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">homepage</span>
 </span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">                </span><span class="nt">port</span><span class="p">:</span>
 </span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="w">                  </span><span class="nt">number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3000</span>
+</span></code></pre></div>
+<h3 id="multiple-replicas">Multiple Replicas</h3>
+<p>If you plan to deploy homepage with a replica count greater than 1, you may
+want to consider enabling sticky sessions on the homepage route. This will
+prevent unnecessary re-renders on page loads and window / tab focusing. The
+procedure for enabling sticky sessions depends on your Ingress controller. Below
+is an example using Traefik as the Ingress controller.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>apiVersion: traefik.io/v1alpha1
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>kind: IngressRoute
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>metadata:
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  name: homepage.example.com
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>spec:
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>  entryPoints:
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    - websecure
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>  routes:
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    - kind: Rule
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>      match: Host(`homepage.example.com`)
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>      services:
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        - kind: Service
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>          name: homepage
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>          port: 3000
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>          sticky:
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>            cookie:
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>              httpOnly: true
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>              secure: true
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>              sameSite: none
 </span></code></pre></div>
 
 

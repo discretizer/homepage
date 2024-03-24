@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://gethomepage.dev/main/widgets/services/glances/">
       
       
-        <link rel="prev" href="../ghostfolio/">
+        <link rel="prev" href="../gitea/">
       
       
         <link rel="next" href="../gluetun/">
@@ -1128,6 +1128,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -1580,6 +1590,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../esphome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ESPHome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../evcc/" class="md-nav__link">
         
   
@@ -1732,6 +1763,27 @@
   
   <span class="md-ellipsis">
     Ghostfolio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitea/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gitea
   </span>
   
 
@@ -1933,6 +1985,27 @@
   
   <span class="md-ellipsis">
     Home Assistant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../homebox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homebox
   </span>
   
 
@@ -2768,6 +2841,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../plantit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plant-it
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../plex-tautulli/" class="md-nav__link">
         
   
@@ -3167,6 +3261,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../stash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../syncthing-relay-server/" class="md-nav__link">
         
   
@@ -3444,7 +3559,7 @@
         
   
   <span class="md-ellipsis">
-    Whats Up Docker
+    What's Up Docker
   </span>
   
 
@@ -4062,6 +4177,9 @@
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user</span><span class="w"> </span><span class="c1"># optional if auth enabled in Glances</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pass</span><span class="w"> </span><span class="c1"># optional if auth enabled in Glances</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">metric</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cpu</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">diskUnits</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bytes</span><span class="w"> </span><span class="c1"># optional, bytes (default) or bbytes. Only applies to disk</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5000</span><span class="w"> </span><span class="c1"># optional - in milliseconds, defaults to 1000 or more, depending on the metric</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">pointsLimit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15</span><span class="w"> </span><span class="c1"># optional, defaults to 15</span>
 </span></code></pre></div>
 <p><em>Please note, this widget does not need an <code>href</code>, <code>icon</code> or <code>description</code> on its parent service. To achieve the same effect as the examples above, see as an example:</em></p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">CPU Usage</span><span class="p">:</span>
