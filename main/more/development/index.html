@@ -362,12 +362,18 @@
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+  <!-- Navigation -->
+  
+    
+    <div
+      class="md-sidebar md-sidebar--primary"
+      data-md-component="sidebar"
+      data-md-type="navigation"
+      
+    >
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          
 
 
   
@@ -905,6 +911,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2443,6 +2453,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../widgets/services/netalertx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NetAlertX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../widgets/services/nextcloud/" class="md-nav__link">
         
   
@@ -2653,6 +2684,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../widgets/services/openwrt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenWRT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../widgets/services/overseerr/" class="md-nav__link">
         
   
@@ -2742,27 +2794,6 @@
   
   <span class="md-ellipsis">
     PhotoPrism
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../widgets/services/pialert/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PiAlert
   </span>
   
 
@@ -3267,6 +3298,27 @@
   
   <span class="md-ellipsis">
     Tailscale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../widgets/services/tandoor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tandoor
   </span>
   
 
@@ -4067,6 +4119,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#preferring-self-hosted-open-source-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preferring self-hosted open-source software
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#new-feature-guidelines" class="md-nav__link">
     <span class="md-ellipsis">
       New Feature Guidelines
@@ -4144,16 +4205,24 @@
     
   </ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+          
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- Table of contents -->
+  
+    
+    <div
+      class="md-sidebar md-sidebar--secondary"
+      data-md-component="sidebar"
+      data-md-type="toc"
+      
+    >
+      <div class="md-sidebar__scrollwrap" style="height: 200px;">
+        <div class="md-sidebar__inner">
+          
 
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
@@ -4194,6 +4263,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#preferring-self-hosted-open-source-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preferring self-hosted open-source software
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#new-feature-guidelines" class="md-nav__link">
     <span class="md-ellipsis">
       New Feature Guidelines
@@ -4214,11 +4292,14 @@
     </ul>
   
 </nav>
-                  </div>
-                </div>
-              </div>
-            
           
+            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CWYIL2JU&placement=gethomepagedev&format=cover" id="_carbonads_js"></script>
+          
+        </div>
+      </div>
+    </div>
+  
+
           
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
@@ -4254,6 +4335,9 @@
 <p>To ensure a consistent style and formatting across the project source, the project utilizes Git <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks"><code>pre-commit</code></a> hooks to perform some formatting and linting before a commit is allowed.</p>
 <p>Once installed, hooks will run when you commit. If the formatting isn't quite right, the commit will be rejected and you'll need to look at the output and fix the issue. Most hooks will automatically format failing files, so all you need to do is <code>git add</code> those files again and retry your commit.</p>
 <p>See the <a href="https://pre-commit.com/#install">pre-commit documentation</a> to get started.</p>
+<h2 id="preferring-self-hosted-open-source-software">Preferring self-hosted open-source software</h2>
+<p>In general, homepage is meant to be a dashboard for 'self-hosted' services and we believe it is a small way we can help showcase this kind of software. While exceptions are made, mostly when there is no viable
+self-hosted / open-source alternative, we ask that any widgets, etc. are developed primarily for a self-hosted tool.</p>
 <h2 id="new-feature-guidelines">New Feature Guidelines</h2>
 <ul>
 <li>New features should be linked to an existing feature request with at least 10 'up-votes'. The purpose of this requirement is to avoid the addition (and maintenance) of features that might only benefit a small number of users.</li>

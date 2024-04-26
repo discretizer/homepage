@@ -466,6 +466,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gethomepage.dev/main/widgets/services/netalertx/</loc>
+         <lastmod>2024-04-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gethomepage.dev/main/widgets/services/netdata/</loc>
          <lastmod>2024-04-26</lastmod>
          <changefreq>daily</changefreq>
@@ -547,11 +552,6 @@
     </url>
     <url>
          <loc>https://gethomepage.dev/main/widgets/services/photoprism/</loc>
-         <lastmod>2024-04-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://gethomepage.dev/main/widgets/services/pialert/</loc>
          <lastmod>2024-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
