@@ -286,6 +286,12 @@ export async function servicesFromKubernetes() {
         if (ingress.metadata.annotations[`${ANNOTATION_BASE}/statusStyle`]) {
           constructedService.statusStyle = ingress.metadata.annotations[`${ANNOTATION_BASE}/statusStyle`];
         }
+        if (ingress.metadata.annotations[`${ANNOTATION_BASE}/allowUsers`]) {
+          constructedService.allowUsers = ingress.metadata.annotations[`${ANNOTATION_BASE}/allowUsers`].split(",");
+        }
+        if (ingress.metadata.annotations[`${ANNOTATION_BASE}/allowGroups`]) {
+          constructedService.allowGroups = ingress.metadata.annotations[`${ANNOTATION_BASE}/allowGroups`].split(",");
+        }
         Object.keys(ingress.metadata.annotations).forEach((annotation) => {
           if (annotation.startsWith(ANNOTATION_WIDGET_BASE)) {
             shvl.set(
