@@ -190,7 +190,7 @@ export async function servicesFromKubernetes() {
     if (!resources) {
       return [];
     }
-    const sersvices = await Promise.all(
+    const services = await Promise.all(
       resources
         .filter((resource) => kubernetes.isDiscoverable(resource, instanceName))
         .map(async (resource) => kubernetes.constructedServiceFromResource(resource)),

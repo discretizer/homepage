@@ -22,6 +22,8 @@ import { SettingsContext } from "utils/contexts/settings";
 import { TabContext } from "utils/contexts/tab";
 import ErrorBoundary from "components/errorboundry";
 import QuickLaunch from "components/quicklaunch";
+import { getStoredProvider, searchProviders } from "components/widgets/search/search";
+import { fetchWithIdentity, readIdentitySettings } from "utils/identity/identity-helpers";
 
 import { bookmarksResponse, servicesResponse, widgetsResponse } from "utils/config/api-response";
 import themes from "utils/styles/themes";
