@@ -122,7 +122,6 @@ export async function constructedServiceFromResource(resource) {
     constructedService.allowGroups = ingress.metadata.annotations[`${ANNOTATION_BASE}/allowGroups`].split(",");
   }
 
-
   Object.keys(resource.metadata.annotations).forEach((annotation) => {
     if (annotation.startsWith(ANNOTATION_WIDGET_BASE)) {
       shvl.set(
