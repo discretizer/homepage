@@ -1,5 +1,5 @@
-import ProxyIdentityProvider from "./proxy";
 import NullIdentityProvider from "./null";
+import ProxyIdentityProvider from "./proxy";
 
 const IdentityProviders = {
   null: NullIdentityProvider,

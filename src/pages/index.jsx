@@ -1,8 +1,4 @@
 /* eslint-disable react/no-array-index-key */
-import useSWR, { unstable_serialize as unstableSerialize, SWRConfig } from "swr";
-import Head from "next/head";
-import Script from "next/script";
-import dynamic from "next/dynamic";
 import classNames from "classnames";
 import BookmarksGroup from "components/bookmarks/group";
 import ErrorBoundary from "components/errorboundry";
@@ -16,16 +12,16 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useRouter } from "next/router";
-
-import NullIdentityProvider from "utils/identity/null";
 import Script from "next/script";
+import useSWR, { SWRConfig, unstable_serialize as unstableSerialize } from "swr";
+
 import { useContext, useEffect, useMemo, useState } from "react";
 import { BiError } from "react-icons/bi";
-import useSWR, { SWRConfig } from "swr";
 import { ColorContext } from "utils/contexts/color";
 import { SettingsContext } from "utils/contexts/settings";
 import { TabContext } from "utils/contexts/tab";
 import { ThemeContext } from "utils/contexts/theme";
+import NullIdentityProvider from "utils/identity/null";
 
 import { bookmarksResponse, servicesResponse, widgetsResponse } from "utils/config/api-response";
 import { getSettings } from "utils/config/config";

@@ -1,5 +1,5 @@
-import { checkAllowedGroup, readIdentitySettings } from "utils/identity/identity-helpers";
 import { getSettings } from "utils/config/config";
+import { checkAllowedGroup, readIdentitySettings } from "utils/identity/identity-helpers";
 
 export default async function handler(req, res) {
   const { group } = req.query;
