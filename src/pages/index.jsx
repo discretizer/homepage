@@ -16,14 +16,13 @@ import Script from "next/script";
 import { useContext, useEffect, useMemo, useState } from "react";
 import { BiError } from "react-icons/bi";
 import useSWR, { SWRConfig, unstable_serialize as unstableSerialize } from "swr";
-
-import { bookmarksResponse, servicesResponse, widgetsResponse } from "utils/config/api-response";
-import { getSettings } from "utils/config/config";
 import { ColorContext } from "utils/contexts/color";
 import { SettingsContext } from "utils/contexts/settings";
 import { TabContext } from "utils/contexts/tab";
 import { ThemeContext } from "utils/contexts/theme";
 
+import { bookmarksResponse, servicesResponse, widgetsResponse } from "utils/config/api-response";
+import { getSettings } from "utils/config/config";
 import useWindowFocus from "utils/hooks/window-focus";
 import { fetchWithIdentity, readIdentitySettings } from "utils/identity/identity-helpers";
 import NullIdentityProvider from "utils/identity/null";
