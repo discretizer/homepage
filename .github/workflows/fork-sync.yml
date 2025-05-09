@@ -38,7 +38,8 @@ jobs:
         run: |
           for TAG in ${NEW_TAGS}; do
             git checkout -b release/${TAG} main
-            git rebase --onto ${TAG} -X theirs upstream/main
+            git merge -s ours -m "Start the merging-rebase to ${TAG}" HEAD@{1}
+            git rebase --onto ${TAG} upstream/main
           done
           for TAG in ${NEW_TAGS}; do
             git push -u origin release/${TAG}
