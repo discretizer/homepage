@@ -13,23 +13,20 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Script from "next/script";
-import useSWR, { SWRConfig, unstable_serialize as unstableSerialize } from "swr";
-
 import { useContext, useEffect, useMemo, useState } from "react";
 import { BiError } from "react-icons/bi";
+import useSWR, { SWRConfig, unstable_serialize as unstableSerialize } from "swr";
+import { bookmarksResponse, servicesResponse, widgetsResponse } from "utils/config/api-response";
+import { getSettings } from "utils/config/config";
 import { ColorContext } from "utils/contexts/color";
 import { SettingsContext } from "utils/contexts/settings";
 import { TabContext } from "utils/contexts/tab";
 import { ThemeContext } from "utils/contexts/theme";
-import NullIdentityProvider from "utils/identity/null";
-
-import { bookmarksResponse, servicesResponse, widgetsResponse } from "utils/config/api-response";
-import { getSettings } from "utils/config/config";
 import useWindowFocus from "utils/hooks/window-focus";
+import { fetchWithIdentity, readIdentitySettings } from "utils/identity/identity-helpers";
+import NullIdentityProvider from "utils/identity/null";
 import createLogger from "utils/logger";
 import themes from "utils/styles/themes";
-
-import { fetchWithIdentity, readIdentitySettings } from "utils/identity/identity-helpers";
 
 const ThemeToggle = dynamic(() => import("components/toggles/theme"), {
   ssr: false,
