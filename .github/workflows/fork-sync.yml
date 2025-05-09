@@ -33,6 +33,8 @@ jobs:
         run: |
           git config user.name "Github Action"
           git config user.email "bot@github-actions"
+          git config merge.workflow-override.name "Keep fork workflows during rebase"
+          git config merge.workflow-override.driver "git merge-file --theirs %A %O %B"
       - name: Create Tags
         if: ${{inputs.tags || steps.fetch-upstream-tags.outputs.NEW_TAGS}}
         run: |
